@@ -1,4 +1,12 @@
-h2 { color:#5D4C38;}
+*{font-family: 'slabo 27px', serif;}
+
+h2 { color:#5D4C38; 
+     font-family: 'slabo 27px', serif;}
+
+
+#header, #footer, #menu{height: 60px;}
+
+/* Layout Helpers */
 .row {min-width:100% !important;}
 
 .container{
@@ -7,29 +15,34 @@ h2 { color:#5D4C38;}
   color: #5D4C38;
 }
 
+.smaller{
+  min-width: 80% !important; 
+  max-width: 80% !important; 
+}
+
+
+#menu{
+  font-size: 1.25em;
+  position: relative;
+  text-align: center;
+  background-color: #E6AC27;
+  outline: 2px solid #5D4C38;
+  outline-left: none;
+}
+
 a.btn{
-  font-family: 'Slabo 27px', serif;
-  font-size: 1.5em;
-  width: 20%;
   float: left;
-  cursor: default;
-  height: 50px;
-  line-height: 50px; 
+  width: 20%;
+  height: 40px;
+  line-height: 40px; 
+  margin: 10px 2.5%;
   background-color: #FFFFFF;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  box-shadow: 3px 3px 0px #5D4C38; 
   color: #5D4C38;  
+  box-shadow: 3px 3px 0px #5D4C38; 
 }
 
 a.btn:hover {
   box-shadow: none;
-  color: #E56035; 
-}
-
-a.btn:active {
-  box-shadow: none;
-  border: 2px solid #424242;
 }
 
 a.btn.selected{
@@ -38,23 +51,8 @@ a.btn.selected{
   background-color: #5D4C38;
 }
 
-#top-row{height: 60px;}
 
-#menu-container{
-  position: relative;
-  text-align: center;
-  background-color: #E6AC27;
-  height: 75px;
-  padding-top: 12px;
-  border: 2px solid #5D4C38;
-  border-left: none;
-}
-
-.smaller{
-  min-width: 80% !important; 
-  max-width: 80% !important; 
-}
-
+/* Main Page */
 #intro-text{
   padding-top: 2em;
   margin-bottom: 1em;
@@ -62,4 +60,3 @@ a.btn.selected{
   border-bottom: 2px solid #0A867B;
 }
 
-#footer{height: 75px;}
