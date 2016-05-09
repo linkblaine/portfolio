@@ -1,62 +1,91 @@
-*{font-family: 'slabo 27px', serif;}
-
-h2 { color:#5D4C38; 
-     font-family: 'slabo 27px', serif;}
-
-
-#header, #footer, #menu{height: 60px;}
-
-/* Layout Helpers */
-.row {min-width:100% !important;}
-
-.container{
-  background-color: #F2EECB;
-  height: 100%;
-  color: #5D4C38;
+.hero {
+  background: url("http://placehold.it/2000x500&text=") no-repeat center center;
+  background-size: cover;
+  height: 100vh; 
 }
 
-.smaller{
-  min-width: 80% !important; 
-  max-width: 80% !important; 
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(135deg, #CCCBD0, #f1f2f4);
+  opacity: .8; 
 }
 
-
-#menu{
-  font-size: 1.25em;
+.hero .intro {
   position: relative;
-  text-align: center;
-  background-color: #E6AC27;
-  outline: 2px solid #5D4C38;
-  outline-left: none;
+  top: 50%;
+  transform: translateY(-50%); 
 }
 
-a.btn{
-  float: left;
-  width: 20%;
-  height: 40px;
-  line-height: 40px; 
-  margin: 10px 2.5%;
-  background-color: #FFFFFF;
-  color: #5D4C38;  
-  box-shadow: 3px 3px 0px #5D4C38; 
+.hero h1 {
+  font-family: 'Source Code Pro';
+  color: #000;
+  font-size: 2.5rem;
+  line-height: 1.5em;
+  letter-spacing: -0.025em;
+  font-weight: 300;
+  text-align: left; 
 }
 
-a.btn:hover {
-  box-shadow: none;
+.hero p {
+  font-family: 'Source Code Pro';
+  color: #000;
+  line-height: 1em;
+  font-size: .5rem;
+  text-align: left;
 }
 
-a.btn.selected{
-  box-shadow: none;
-  color: #E56035;
-  background-color: #5D4C38;
+.hero li {
+  font-family: 'Source Code Pro';
+  color: #000;
+  line-height: 1.75em;
+  text-align: left;
+}
+
+.hero .tech-img {
+  background: url("../images/zack.jpg") no-repeat center -10px;
+  background-size: cover;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; 
+}
+
+/* NON-Mobile */
+@media only screen and (min-width: 40.063em) {
+  .hero .tech-img {
+    height: 24rem;
+    width: 24rem; 
+  }
+  
+  .hero h1 {
+    font-family: 'Source Code Pro';
+    color: #000;
+    padding-top: 1.5rem;
+    text-align: left;
+    font-size: 3.0rem;
+  }
+  
+  .hero p {
+    font-family: 'Source Code Pro';
+    font-size: 1.5rem;
+    color: #000;
+    text-align: left; 
+  } 
+
+  .hero li {
+    font-family: 'Source Code Pro';
+    color: #000;
+    line-height: 1.75em;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
 }
 
 
-/* Main Page */
-#intro-text{
-  padding-top: 2em;
-  margin-bottom: 1em;
-  text-align: center;
-  border-bottom: 2px solid #0A867B;
-}
-
+                  
