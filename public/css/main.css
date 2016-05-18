@@ -94,6 +94,24 @@
   }
 }
 
+/* CSS */
+@media only screen and (max-width: 64em){
+  .profile-card .profile-info .desc {
+    display: none;
+  }
+
+  .profile-card .profile-info h4 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase; 
+    font-size: 1em;
+  }
+
+}
+@media only screen and (min-width: 64.063em){
+  /* Styles for large-up */
+}
+
 .footer {
   background-color: #292c2f;
   text-align: center;
